@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MIDINameDocument PUBLIC "-//MIDI Manufacturers Association//DTD MIDINameDocument 1.0//EN" "http://www.midi.org/dtds/MIDINameDocument10.dtd">
+
+<MIDINameDocument>
+	<Author>Gus G. Gugus</Author>
+	<MasterDeviceNames>
+		<Manufacturer>Darkglass</Manufacturer>
+		<Model>Microtubes Infinity</Model>
+
+		<CustomDeviceMode Name="Default" >
+			<ChannelNameSetAssignments>
+				<ChannelNameSetAssign Channel="1" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="2" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="3" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="4" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="5" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="6" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="7" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="8" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="9" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="10" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="11" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="12" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="13" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="14" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="15" NameSet="Microtubes Infinity" />
+				<ChannelNameSetAssign Channel="16" NameSet="Microtubes Infinity" />
+			</ChannelNameSetAssignments>
+		</CustomDeviceMode>
+
+		<ChannelNameSet Name="Microtubes Infinity">
+			<AvailableForChannels>
+				<AvailableChannel Channel="1" Available="true"/>
+				<AvailableChannel Channel="2" Available="true"/>
+				<AvailableChannel Channel="3" Available="true"/>
+				<AvailableChannel Channel="4" Available="true"/>
+				<AvailableChannel Channel="5" Available="true"/>
+				<AvailableChannel Channel="6" Available="true"/>
+				<AvailableChannel Channel="7" Available="true"/>
+				<AvailableChannel Channel="8" Available="true"/>
+				<AvailableChannel Channel="9" Available="true"/>
+				<AvailableChannel Channel="10" Available="true"/>
+				<AvailableChannel Channel="11" Available="true"/>
+				<AvailableChannel Channel="12" Available="true"/>
+				<AvailableChannel Channel="13" Available="true"/>
+				<AvailableChannel Channel="14" Available="true"/>
+				<AvailableChannel Channel="15" Available="true"/>
+				<AvailableChannel Channel="16" Available="true"/>
+			</AvailableForChannels>
+			<UsesControlNameList Name="Controls"/>
+
+			<PatchBank Name="Microtubes Infinity" ROM="false">
+				<MIDICommands>
+					<ControlChange Control="0" Value="0" />
+				</MIDICommands>
+				<UsesPatchNameList Name="Microtubes Infinity" />
+			</PatchBank>
+		</ChannelNameSet>
+
+		<PatchNameList Name="Microtubes Infinity" >
+			<Patch Number="01" Name="Preset A" ProgramChange="0" />
+			<Patch Number="02" Name="Preset B" ProgramChange="1" />
+			<Patch Number="03" Name="Preset C" ProgramChange="2" />
+			<Patch Number="04" Name="Preset D" ProgramChange="3" />
+			<Patch Number="05" Name="Preset E" ProgramChange="4" />
+			<Patch Number="06" Name="Preset F" ProgramChange="5" />
+			<Patch Number="07" Name="[Tuner]" ProgramChange="6" />
+			<Patch Number="08" Name="[Bypass]" ProgramChange="7" />
+			<Patch Number="09" Name="[LOCKED]" ProgramChange="8" />
+			<Patch Number="10" Name="Store → A" ProgramChange="100" />
+			<Patch Number="11" Name="Store → B" ProgramChange="101" />
+			<Patch Number="12" Name="Store → C" ProgramChange="102" />
+			<Patch Number="13" Name="Store → D" ProgramChange="103" />
+			<Patch Number="14" Name="Store → E" ProgramChange="104" />
+			<Patch Number="15" Name="Store → F" ProgramChange="105" />
+		</PatchNameList>
+
+		<ValueNameList Name="Compression modes">
+			<Value Number="0" Name="[OFF]"/>
+			<Value Number="22" Name="4:1"/>
+			<Value Number="43" Name="8:1"/>
+			<Value Number="64" Name="12:1"/>
+			<Value Number="86" Name="20:1"/>
+			<Value Number="107" Name="ALL IN"/>
+		</ValueNameList>
+
+		<ValueNameList Name="Distortions modes">
+			<Value Number="0" Name="[OFF]"/>
+			<Value Number="22" Name="1|Clean Tube (multiband)"/>
+			<Value Number="43" Name="2|B3K Microtubes"/>
+			<Value Number="64" Name="3|Vintage Microtubes"/>
+			<Value Number="86" Name="4|B3K Microtubes (multiband)"/>
+			<Value Number="107" Name="5|Vintage Microtubes (multiband)"/>
+		</ValueNameList>
+
+		<ValueNameList Name="Cabsims">
+			<Value Number="0" Name="[OFF]"/>
+			<Value Number="22" Name="Cabsim #1"/>
+			<Value Number="43" Name="Cabsim #2"/>
+			<Value Number="64" Name="Cabsim #3"/>
+			<Value Number="86" Name="Cabsim #4"/>
+			<Value Number="107" Name="Cabsim #5"/>
+		</ValueNameList>
+
+		<ValueNameList Name="EQ Levels">
+			<Value Number="0" Name="-12.0 dB"/>
+			<Value Number="1" Name="-11.8 dB"/>
+			<Value Number="2" Name="-11.6 dB"/>
+			<Value Number="3" Name="-11.4 dB"/>
+			<Value Number="4" Name="-11.2 dB"/>
+			<Value Number="5" Name="-11.1 dB"/>
+			<Value Number="6" Name="-10.9 dB"/>
+			<Value Number="7" Name="-10.7 dB"/>
+			<Value Number="8" Name="-10.5 dB"/>
+			<Value Number="9" Name="-10.3 dB"/>
+			<Value Number="10" Name="-10.1 dB"/>
+			<Value Number="11" Name="-9.9 dB"/>
+			<Value Number="12" Name="-9.8 dB"/>
+			<Value Number="13" Name="-9.6 dB"/>
+			<Value Number="14" Name="-9.4 dB"/>
+			<Value Number="15" Name="-9.2 dB"/>
+			<Value Number="16" Name="-9.0 dB"/>
+			<Value Number="17" Name="-8.8 dB"/>
+			<Value Number="18" Name="-8.6 dB"/>
+			<Value Number="19" Name="-8.4 dB"/>
+			<Value Number="20" Name="-8.2 dB"/>
+			<Value Number="21" Name="-8.1 dB"/>
+			<Value Number="22" Name="-7.9 dB"/>
+			<Value Number="23" Name="-7.7 dB"/>
+			<Value Number="24" Name="-7.5 dB"/>
+			<Value Number="25" Name="-7.3 dB"/>
+			<Value Number="26" Name="-7.1 dB"/>
+			<Value Number="27" Name="-6.9 dB"/>
+			<Value Number="28" Name="-6.8 dB"/>
+			<Value Number="29" Name="-6.6 dB"/>
+			<Value Number="30" Name="-6.4 dB"/>
+			<Value Number="31" Name="-6.2 dB"/>
+			<Value Number="32" Name="-6.0 dB"/>
+			<Value Number="33" Name="-5.8 dB"/>
+			<Value Number="34" Name="-5.6 dB"/>
+			<Value Number="35" Name="-5.4 dB"/>
+			<Value Number="36" Name="-5.2 dB"/>
+			<Value Number="37" Name="-5.1 dB"/>
+			<Value Number="38" Name="-4.9 dB"/>
+			<Value Number="39" Name="-4.7 dB"/>
+			<Value Number="40" Name="-4.5 dB"/>
+			<Value Number="41" Name="-4.3 dB"/>
+			<Value Number="42" Name="-4.1 dB"/>
+			<Value Number="43" Name="-3.9 dB"/>
+			<Value Number="44" Name="-3.8 dB"/>
+			<Value Number="45" Name="-3.6 dB"/>
+			<Value Number="46" Name="-3.4 dB"/>
+			<Value Number="47" Name="-3.2 dB"/>
+			<Value Number="48" Name="-3.0 dB"/>
+			<Value Number="49" Name="-2.8 dB"/>
+			<Value Number="50" Name="-2.6 dB"/>
+			<Value Number="51" Name="-2.4 dB"/>
+			<Value Number="52" Name="-2.2 dB"/>
+			<Value Number="53" Name="-2.1 dB"/>
+			<Value Number="54" Name="-1.9 dB"/>
+			<Value Number="55" Name="-1.7 dB"/>
+			<Value Number="56" Name="-1.5 dB"/>
+			<Value Number="57" Name="-1.3 dB"/>
+			<Value Number="58" Name="-1.1 dB"/>
+			<Value Number="59" Name="-0.9 dB"/>
+			<Value Number="60" Name="-0.8 dB"/>
+			<Value Number="61" Name="-0.6 dB"/>
+			<Value Number="62" Name="-0.4 dB"/>
+			<Value Number="63" Name="-0.2 dB"/>
+			<Value Number="64" Name="+0.0 dB"/>
+			<Value Number="65" Name="+0.2 dB"/>
+			<Value Number="66" Name="+0.4 dB"/>
+			<Value Number="67" Name="+0.6 dB"/>
+			<Value Number="68" Name="+0.8 dB"/>
+			<Value Number="69" Name="+1.0 dB"/>
+			<Value Number="70" Name="+1.1 dB"/>
+			<Value Number="71" Name="+1.3 dB"/>
+			<Value Number="72" Name="+1.5 dB"/>
+			<Value Number="73" Name="+1.7 dB"/>
+			<Value Number="74" Name="+1.9 dB"/>
+			<Value Number="75" Name="+2.1 dB"/>
+			<Value Number="76" Name="+2.3 dB"/>
+			<Value Number="77" Name="+2.5 dB"/>
+			<Value Number="78" Name="+2.7 dB"/>
+			<Value Number="79" Name="+2.9 dB"/>
+			<Value Number="80" Name="+3.0 dB"/>
+			<Value Number="81" Name="+3.2 dB"/>
+			<Value Number="82" Name="+3.4 dB"/>
+			<Value Number="83" Name="+3.6 dB"/>
+			<Value Number="84" Name="+3.8 dB"/>
+			<Value Number="85" Name="+4.0 dB"/>
+			<Value Number="86" Name="+4.2 dB"/>
+			<Value Number="87" Name="+4.4 dB"/>
+			<Value Number="88" Name="+4.6 dB"/>
+			<Value Number="89" Name="+4.8 dB"/>
+			<Value Number="90" Name="+5.0 dB"/>
+			<Value Number="91" Name="+5.1 dB"/>
+			<Value Number="92" Name="+5.3 dB"/>
+			<Value Number="93" Name="+5.5 dB"/>
+			<Value Number="94" Name="+5.7 dB"/>
+			<Value Number="95" Name="+5.9 dB"/>
+			<Value Number="96" Name="+6.1 dB"/>
+			<Value Number="97" Name="+6.3 dB"/>
+			<Value Number="98" Name="+6.5 dB"/>
+			<Value Number="99" Name="+6.7 dB"/>
+			<Value Number="100" Name="+6.9 dB"/>
+			<Value Number="101" Name="+7.0 dB"/>
+			<Value Number="102" Name="+7.2 dB"/>
+			<Value Number="103" Name="+7.4 dB"/>
+			<Value Number="104" Name="+7.6 dB"/>
+			<Value Number="105" Name="+7.8 dB"/>
+			<Value Number="106" Name="+8.0 dB"/>
+			<Value Number="107" Name="+8.2 dB"/>
+			<Value Number="108" Name="+8.4 dB"/>
+			<Value Number="109" Name="+8.6 dB"/>
+			<Value Number="110" Name="+8.8 dB"/>
+			<Value Number="111" Name="+9.0 dB"/>
+			<Value Number="112" Name="+9.1 dB"/>
+			<Value Number="113" Name="+9.3 dB"/>
+			<Value Number="114" Name="+9.5 dB"/>
+			<Value Number="115" Name="+9.7 dB"/>
+			<Value Number="116" Name="+9.9 dB"/>
+			<Value Number="117" Name="+10.1 dB"/>
+			<Value Number="118" Name="+10.3 dB"/>
+			<Value Number="119" Name="+10.5 dB"/>
+			<Value Number="120" Name="+10.7 dB"/>
+			<Value Number="121" Name="+10.9 dB"/>
+			<Value Number="122" Name="+11.0 dB"/>
+			<Value Number="123" Name="+11.2 dB"/>
+			<Value Number="124" Name="+11.4 dB"/>
+			<Value Number="125" Name="+11.6 dB"/>
+			<Value Number="126" Name="+11.8 dB"/>
+			<Value Number="127" Name="+12.0 dB"/>
+		</ValueNameList>
+
+		<ControlNameList Name="Controls">
+			<Control Type="7bit" Number="1" Name="Compression"/>
+			<Control Type="7bit" Number="2" Name="Drive"/>
+			<Control Type="7bit" Number="3" Name="Tone/Era"/>
+			<Control Type="7bit" Number="4" Name="Blend"/>
+			<Control Type="7bit" Number="5" Name="Level"/>
+			<Control Type="7bit" Number="6" Name="Headphones"/>
+
+			<Control Type="7bit" Number="7" Name="Compression mode">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="Compression modes"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="8" Name="Distortion mode">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="Distortion modes"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="9" Name="Cabsim">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="Cabsims"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="10" Name="EQ Low / 100 Hz">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="EQ Levels"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="11" Name="EQ 250 Hz / 200 Hz">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="EQ Levels"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="12" Name="EQ 500 Hz / 400 Hz">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="EQ Levels"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="13" Name="EQ 1,5 kHz / 800 Hz">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="EQ Levels"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="14" Name="EQ 3 kHz / 1,6 kHz">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="EQ Levels"/>
+				</Values>
+			</Control>
+
+			<Control Type="7bit" Number="15" Name="EQ High / 3,2 kHz">
+				<Values Min="0" Max="127">
+					<UsesValueNameList Name="EQ Levels"/>
+				</Values>
+			</Control>
+
+		</ControlNameList>
+	</MasterDeviceNames>
+</MIDINameDocument>

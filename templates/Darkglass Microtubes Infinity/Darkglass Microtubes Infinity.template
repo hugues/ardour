@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session version="7002" id-counter="6000" name-counter="1" event-counter="419418" vca-counter="1">
+  <ProgramVersion created-with="Ardour 7.5.0~ds-2" modified-with="Ardour 7.5.0~ds-2"/>
+  <MIDIPorts>
+    <Port name="Cue Control in" type="midi" direction="Input"/>
+    <Port name="MIDI Clock out" type="midi" direction="Output"/>
+    <Port name="MMC in" type="midi" direction="Input"/>
+    <Port name="MMC out" type="midi" direction="Output"/>
+    <Port name="MTC out" type="midi" direction="Output"/>
+    <Port name="Scene in" type="midi" direction="Input"/>
+    <Port name="Scene out" type="midi" direction="Output"/>
+    <Port name="x-virtual-keyboard" type="midi" direction="Output">
+      <Connection other="Microtubes Infinity MIDI 1 (In)/midi_in 1"/>
+      <Connection other="Microtubes Infinity MIDI 1 (In)/midi_in 1"/>
+    </Port>
+  </MIDIPorts>
+  <Config>
+    <Option name="use-region-fades" value="1"/>
+    <Option name="use-transport-fades" value="1"/>
+    <Option name="use-monitor-fades" value="1"/>
+    <Option name="native-file-data-format" value="FormatFloat"/>
+    <Option name="native-file-header-format" value="WAVE64"/>
+    <Option name="auto-play" value="0"/>
+    <Option name="auto-return" value="0"/>
+    <Option name="auto-input" value="1"/>
+    <Option name="triggerbox-overrides-disk-monitoring" value="1"/>
+    <Option name="cue-behavior" value="FollowCues"/>
+    <Option name="punch-in" value="0"/>
+    <Option name="punch-out" value="0"/>
+    <Option name="count-in" value="0"/>
+    <Option name="session-monitoring" value=""/>
+    <Option name="record-mode" value="RecLayered"/>
+    <Option name="draw-opaque-midi_regions" value="0"/>
+    <Option name="subframes-per-frame" value="100"/>
+    <Option name="timecode-format" value="timecode_30"/>
+    <Option name="minitimeline-span" value="120"/>
+    <Option name="track-name-number" value="1"/>
+    <Option name="track-name-take" value="1"/>
+    <Option name="take-name" value="Take11"/>
+    <Option name="jack-time-master" value="1"/>
+    <Option name="use-video-sync" value="0"/>
+    <Option name="video-pullup" value="0"/>
+    <Option name="external-sync" value="0"/>
+    <Option name="insert-merge-policy" value="InsertMergeRelax"/>
+    <Option name="timecode-offset" value="0"/>
+    <Option name="timecode-offset-negative" value="1"/>
+    <Option name="slave-timecode-offset" value=" 00:00:00:00"/>
+    <Option name="timecode-generator-offset" value=" 00:00:00:00"/>
+    <Option name="glue-new-markers-to-bars-and-beats" value="0"/>
+    <Option name="midi-copy-is-fork" value="1"/>
+    <Option name="glue-new-regions-to-bars-and-beats" value="0"/>
+    <Option name="realtime-export" value="0"/>
+    <Option name="use-video-file-fps" value="0"/>
+    <Option name="videotimeline-pullup" value="1"/>
+    <Option name="wave-amplitude-zoom" value="0"/>
+    <Option name="wave-zoom-factor" value="2"/>
+    <Option name="show-summary" value="1"/>
+    <Option name="show-group-tabs" value="1"/>
+    <Option name="show-region-fades" value="1"/>
+    <Option name="show-busses-on-meterbridge" value="0"/>
+    <Option name="show-master-on-meterbridge" value="1"/>
+    <Option name="show-midi-on-meterbridge" value="1"/>
+    <Option name="show-rec-on-meterbridge" value="1"/>
+    <Option name="show-mute-on-meterbridge" value="1"/>
+    <Option name="show-solo-on-meterbridge" value="1"/>
+    <Option name="show-monitor-on-meterbridge" value="1"/>
+    <Option name="show-name-on-meterbridge" value="1"/>
+    <Option name="show-fader-on-meterbridge" value="0"/>
+    <Option name="meterbridge-label-height" value="0"/>
+  </Config>
+  <Metadata/>
+  <Sources/>
+  <TriggerBindings/>
+  <Regions/>
+  <Locations>
+    <Location id="6002" name="session" start="a0" end="a0" flags="IsSessionRange" locked="0" timestamp="1705531966" cue="0"/>
+  </Locations>
+  <Bundles/>
+  <VCAManager/>
+  <Routes>
+    <Route version="7002" id="71" name="Master" default-type="audio" strict-io="1" volume-applies-to-output="1" active="1" denormal-protection="0" meter-point="MeterOutput" disk-io-point="DiskIOPreFader" meter-type="MeterK14">
+      <ProgramVersion created-with="Ardour 7.5.0~ds-2" modified-with="Ardour 7.5.0~ds-2"/>
+      <PresentationInfo order="0" flags="MasterOut,OrderSet" color="2855877119"/>
+      <Controllable name="solo" id="79" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="85" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="87" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Master" id="99" direction="Input" default-type="audio">
+        <Port name="Master/audio_in 1" type="audio" direction="Input">
+          <Connection other="Aux/audio_out 1"/>
+          <Connection other="Clean/audio_out 1"/>
+          <Connection other="Microtubes Infinity MIDI 1 (In)/audio_out 1"/>
+          <Connection other="Processed/audio_out 1"/>
+        </Port>
+        <Port name="Master/audio_in 2" type="audio" direction="Input">
+          <Connection other="Aux/audio_out 2"/>
+          <Connection other="Clean/audio_out 2"/>
+          <Connection other="Microtubes Infinity MIDI 1 (In)/audio_out 2"/>
+          <Connection other="Processed/audio_out 2"/>
+        </Port>
+      </IO>
+      <IO name="Master" id="100" direction="Output" default-type="audio">
+        <Port name="Master/audio_out 1" type="audio" direction="Output">
+          <ExtConnection for="ALSA;;HDA Intel PCH"/>
+          <ExtConnection for="ALSA;;HDA Intel PCH" other="system:playback_1"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:playback_1"/>
+        </Port>
+        <Port name="Master/audio_out 2" type="audio" direction="Output">
+          <ExtConnection for="ALSA;;HDA Intel PCH"/>
+          <ExtConnection for="ALSA;;HDA Intel PCH" other="system:playback_2"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:playback_2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="81" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="83" flags="Toggle" value="0" phase-invert="00"/>
+      <Controllable name="mastervolume" id="107" flags="GainLike,NotAutomatable" value="1"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="90" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="94" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="92" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="96" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="98" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="89" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="91" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="93" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="95" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="97" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="102" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="103" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="77" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="101" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="75" flags="GainLike" value="1.0181940793991089"/>
+      </Processor>
+      <Processor id="105" name="Master" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Master" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Processor id="104" name="meter-Master" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Slavable/>
+    </Route>
+    <Route version="7002" id="2215" name="Processed" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" audio-playlist="2277" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
+      <ProgramVersion created-with="Ardour 7.5.0~ds-2" modified-with="Ardour 7.5.0~ds-2"/>
+      <PresentationInfo order="1" flags="AudioTrack,OrderSet" color="2855877119"/>
+      <Controllable name="solo" id="2240" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="2246" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="2248" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Processed" id="2260" direction="Input" default-type="audio">
+        <Port name="Processed/audio_in 1" type="audio" direction="Input">
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:capture_1"/>
+        </Port>
+      </IO>
+      <IO name="Processed" id="2261" direction="Output" default-type="audio">
+        <Port name="Processed/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="Processed/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="2242" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="2244" flags="Toggle" value="0" phase-invert="0"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="2251" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="2255" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="2253" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="2257" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="2259" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="2250" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="2252" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="2254" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="2256" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="2258" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="2270" name="recorder:Processed" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="2269" name="player:Processed" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="2218" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="audio" order="0">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="a0"/>
+        </Triggers>
+      </Processor>
+      <Processor id="2263" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="2265" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="2238" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="2262" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="2236" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="2266" name="meter-Main In 1" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="2267" name="Processed" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Processed" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="2276" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="2274" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="2272" flags="Toggle,RealTime" value="0"/>
+    </Route>
+    <Route version="7002" id="2290" name="Clean" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" audio-playlist="2352" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
+      <ProgramVersion created-with="Ardour 7.5.0~ds-2" modified-with="Ardour 7.5.0~ds-2"/>
+      <PresentationInfo order="2" flags="AudioTrack,OrderSet" color="4289374975"/>
+      <Controllable name="solo" id="2315" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="2321" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="2323" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Clean" id="2335" direction="Input" default-type="audio">
+        <Port name="Clean/audio_in 1" type="audio" direction="Input">
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:capture_2"/>
+        </Port>
+      </IO>
+      <IO name="Clean" id="2336" direction="Output" default-type="audio">
+        <Port name="Clean/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="Clean/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="2317" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="2319" flags="Toggle" value="0" phase-invert="0"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="2326" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="2330" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="2328" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="2332" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="2334" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="2325" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="2327" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="2329" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="2331" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="2333" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="2345" name="recorder:Clean" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="2344" name="player:Clean" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="2293" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="audio" order="1">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="a0"/>
+        </Triggers>
+      </Processor>
+      <Processor id="2338" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="2340" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="2313" flags="GainLike" value="4.2461981773376465"/>
+      </Processor>
+      <Processor id="2337" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="2311" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="2341" name="meter-Main In 2" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="2342" name="Clean" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Clean" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="2351" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="2349" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="2347" flags="Toggle,RealTime" value="0"/>
+    </Route>
+    <Route version="7002" id="2515" name="Microtubes Infinity MIDI 1 (In)" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="2593" saved-meter-point="MeterPostFader" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1" restore-pgm="1">
+      <ProgramVersion created-with="Ardour 7.5.0~ds-2" modified-with="Ardour 7.5.0~ds-2"/>
+      <PresentationInfo order="4" flags="MidiTrack,OrderSet" color="1426063615"/>
+      <Controllable name="solo" id="2556" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="2562" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="2564" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Microtubes Infinity MIDI 1 (In)" id="2576" direction="Input" default-type="midi">
+        <Port name="Microtubes Infinity MIDI 1 (In)/midi_in 1" type="midi" direction="Input">
+          <Connection other="x-virtual-keyboard"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:midi_capture_b3988390"/>
+        </Port>
+      </IO>
+      <IO name="Microtubes Infinity MIDI 1 (In)" id="2577" direction="Output" default-type="midi">
+        <Port name="Microtubes Infinity MIDI 1 (In)/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="Microtubes Infinity MIDI 1 (In)/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+        <Port name="Microtubes Infinity MIDI 1 (In)/midi_out 1" type="midi" direction="Output">
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:midi_playback_b3988390"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="2558" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="2560" flags="Toggle" value="0" phase-invert=""/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="2567" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="2571" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="2569" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="2573" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="2575" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="2566" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="2568" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="2570" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="2572" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="2574" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="2586" name="recorder:Microtubes Infinity MIDI 1 (In)" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="2585" name="player:Microtubes Infinity MIDI 1 (In)" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="2518" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="midi" order="3">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+        </Triggers>
+      </Processor>
+      <Processor id="2579" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="2664" name="ACE Reasonable Synth" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="https://community.ardour.org/node/7596" count="1" custom="0">
+        <ConfiguredInput>
+          <Channels type="midi" count="1"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="midi" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="midi" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="0" template-dir="/home/hfjb2692/.config/ardour7/templates/Darkglass Microtubes Infinity"/>
+      </Processor>
+      <Processor id="2578" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="2552" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="2582" name="meter-Microtubes Infinity MIDI 1 (In)" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="2583" name="Microtubes Infinity MIDI 1 (In)" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Microtubes Infinity MIDI 1 (In)" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="2592" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="2590" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="2588" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="midicc-0-0" id="5996" flags="" value="0"/>
+      <Controllable name="midicc-0-1" id="2669" flags="" value="69"/>
+      <Controllable name="midicc-0-2" id="2670" flags="" value="102"/>
+      <Controllable name="midicc-0-3" id="2671" flags="" value="17"/>
+      <Controllable name="midicc-0-4" id="2672" flags="" value="8"/>
+      <Controllable name="midicc-0-5" id="2673" flags="" value="69"/>
+      <Controllable name="midicc-0-6" id="2674" flags="" value="25"/>
+      <Controllable name="midicc-0-7" id="2675" flags="" value="105"/>
+      <Controllable name="midicc-0-8" id="2676" flags="" value="127"/>
+      <Controllable name="midicc-0-9" id="2677" flags="" value="63"/>
+      <Controllable name="midicc-0-10" id="2678" flags="" value="70"/>
+      <Controllable name="midicc-0-11" id="2679" flags="" value="64"/>
+      <Controllable name="midicc-0-12" id="2680" flags="" value="25"/>
+      <Controllable name="midicc-0-13" id="2681" flags="" value="24"/>
+      <Controllable name="midicc-0-14" id="2682" flags="" value="85"/>
+      <Controllable name="midicc-0-15" id="5979" flags="" value="73"/>
+      <Controllable name="midicc-0-32" id="5997" flags="" value="0"/>
+      <Controllable name="midicc-1-1" id="2683" flags="" value="0"/>
+      <Controllable name="midicc-1-2" id="2684" flags="" value="0"/>
+      <Controllable name="midicc-1-3" id="2685" flags="" value="0"/>
+      <Controllable name="midicc-1-4" id="2686" flags="" value="0"/>
+      <Controllable name="midicc-1-5" id="2687" flags="" value="0"/>
+      <Controllable name="midicc-1-6" id="2688" flags="" value="0"/>
+      <Controllable name="midicc-1-7" id="2689" flags="" value="0"/>
+      <Controllable name="midicc-1-8" id="2690" flags="" value="0"/>
+      <Controllable name="midicc-1-9" id="2691" flags="" value="0"/>
+      <Controllable name="midicc-1-10" id="2692" flags="" value="0"/>
+      <Controllable name="midicc-1-11" id="2693" flags="" value="0"/>
+      <Controllable name="midicc-1-12" id="2694" flags="" value="0"/>
+      <Controllable name="midicc-1-13" id="2695" flags="" value="0"/>
+      <Controllable name="midicc-1-14" id="2696" flags="" value="0"/>
+      <Controllable name="midicc-1-15" id="5980" flags="" value="0"/>
+      <Controllable name="midicc-2-1" id="2697" flags="" value="0"/>
+      <Controllable name="midicc-2-2" id="2698" flags="" value="0"/>
+      <Controllable name="midicc-2-3" id="2699" flags="" value="0"/>
+      <Controllable name="midicc-2-4" id="2700" flags="" value="0"/>
+      <Controllable name="midicc-2-5" id="2701" flags="" value="0"/>
+      <Controllable name="midicc-2-6" id="2702" flags="" value="0"/>
+      <Controllable name="midicc-2-7" id="2703" flags="" value="0"/>
+      <Controllable name="midicc-2-8" id="2704" flags="" value="0"/>
+      <Controllable name="midicc-2-9" id="2705" flags="" value="0"/>
+      <Controllable name="midicc-2-10" id="2706" flags="" value="0"/>
+      <Controllable name="midicc-2-11" id="2707" flags="" value="0"/>
+      <Controllable name="midicc-2-12" id="2708" flags="" value="0"/>
+      <Controllable name="midicc-2-13" id="2709" flags="" value="0"/>
+      <Controllable name="midicc-2-14" id="2710" flags="" value="0"/>
+      <Controllable name="midicc-2-15" id="5981" flags="" value="0"/>
+      <Controllable name="midicc-3-1" id="2711" flags="" value="0"/>
+      <Controllable name="midicc-3-2" id="2712" flags="" value="0"/>
+      <Controllable name="midicc-3-3" id="2713" flags="" value="0"/>
+      <Controllable name="midicc-3-4" id="2714" flags="" value="0"/>
+      <Controllable name="midicc-3-5" id="2715" flags="" value="0"/>
+      <Controllable name="midicc-3-6" id="2716" flags="" value="0"/>
+      <Controllable name="midicc-3-7" id="2717" flags="" value="0"/>
+      <Controllable name="midicc-3-8" id="2718" flags="" value="0"/>
+      <Controllable name="midicc-3-9" id="2719" flags="" value="0"/>
+      <Controllable name="midicc-3-10" id="2720" flags="" value="0"/>
+      <Controllable name="midicc-3-11" id="2721" flags="" value="0"/>
+      <Controllable name="midicc-3-12" id="2722" flags="" value="0"/>
+      <Controllable name="midicc-3-13" id="2723" flags="" value="0"/>
+      <Controllable name="midicc-3-14" id="2724" flags="" value="0"/>
+      <Controllable name="midicc-3-15" id="5982" flags="" value="0"/>
+      <Controllable name="midicc-4-1" id="2725" flags="" value="0"/>
+      <Controllable name="midicc-4-2" id="2726" flags="" value="0"/>
+      <Controllable name="midicc-4-3" id="2727" flags="" value="0"/>
+      <Controllable name="midicc-4-4" id="2728" flags="" value="0"/>
+      <Controllable name="midicc-4-5" id="2729" flags="" value="0"/>
+      <Controllable name="midicc-4-6" id="2730" flags="" value="0"/>
+      <Controllable name="midicc-4-7" id="2731" flags="" value="0"/>
+      <Controllable name="midicc-4-8" id="2732" flags="" value="0"/>
+      <Controllable name="midicc-4-9" id="2733" flags="" value="0"/>
+      <Controllable name="midicc-4-10" id="2734" flags="" value="0"/>
+      <Controllable name="midicc-4-11" id="2735" flags="" value="0"/>
+      <Controllable name="midicc-4-12" id="2736" flags="" value="0"/>
+      <Controllable name="midicc-4-13" id="2737" flags="" value="0"/>
+      <Controllable name="midicc-4-14" id="2738" flags="" value="0"/>
+      <Controllable name="midicc-4-15" id="5983" flags="" value="0"/>
+      <Controllable name="midicc-5-1" id="2739" flags="" value="0"/>
+      <Controllable name="midicc-5-2" id="2740" flags="" value="0"/>
+      <Controllable name="midicc-5-3" id="2741" flags="" value="0"/>
+      <Controllable name="midicc-5-4" id="2742" flags="" value="0"/>
+      <Controllable name="midicc-5-5" id="2743" flags="" value="0"/>
+      <Controllable name="midicc-5-6" id="2744" flags="" value="0"/>
+      <Controllable name="midicc-5-7" id="2745" flags="" value="0"/>
+      <Controllable name="midicc-5-8" id="2746" flags="" value="0"/>
+      <Controllable name="midicc-5-9" id="2747" flags="" value="0"/>
+      <Controllable name="midicc-5-10" id="2748" flags="" value="0"/>
+      <Controllable name="midicc-5-11" id="2749" flags="" value="0"/>
+      <Controllable name="midicc-5-12" id="2750" flags="" value="0"/>
+      <Controllable name="midicc-5-13" id="2751" flags="" value="0"/>
+      <Controllable name="midicc-5-14" id="2752" flags="" value="0"/>
+      <Controllable name="midicc-5-15" id="5984" flags="" value="0"/>
+      <Controllable name="midicc-6-1" id="2753" flags="" value="0"/>
+      <Controllable name="midicc-6-2" id="2754" flags="" value="0"/>
+      <Controllable name="midicc-6-3" id="2755" flags="" value="0"/>
+      <Controllable name="midicc-6-4" id="2756" flags="" value="0"/>
+      <Controllable name="midicc-6-5" id="2757" flags="" value="0"/>
+      <Controllable name="midicc-6-6" id="2758" flags="" value="0"/>
+      <Controllable name="midicc-6-7" id="2759" flags="" value="0"/>
+      <Controllable name="midicc-6-8" id="2760" flags="" value="0"/>
+      <Controllable name="midicc-6-9" id="2761" flags="" value="0"/>
+      <Controllable name="midicc-6-10" id="2762" flags="" value="0"/>
+      <Controllable name="midicc-6-11" id="2763" flags="" value="0"/>
+      <Controllable name="midicc-6-12" id="2764" flags="" value="0"/>
+      <Controllable name="midicc-6-13" id="2765" flags="" value="0"/>
+      <Controllable name="midicc-6-14" id="2766" flags="" value="0"/>
+      <Controllable name="midicc-6-15" id="5985" flags="" value="0"/>
+      <Controllable name="midicc-7-1" id="2767" flags="" value="0"/>
+      <Controllable name="midicc-7-2" id="2768" flags="" value="0"/>
+      <Controllable name="midicc-7-3" id="2769" flags="" value="0"/>
+      <Controllable name="midicc-7-4" id="2770" flags="" value="0"/>
+      <Controllable name="midicc-7-5" id="2771" flags="" value="0"/>
+      <Controllable name="midicc-7-6" id="2772" flags="" value="0"/>
+      <Controllable name="midicc-7-7" id="2773" flags="" value="0"/>
+      <Controllable name="midicc-7-8" id="2774" flags="" value="0"/>
+      <Controllable name="midicc-7-9" id="2775" flags="" value="0"/>
+      <Controllable name="midicc-7-10" id="2776" flags="" value="0"/>
+      <Controllable name="midicc-7-11" id="2777" flags="" value="0"/>
+      <Controllable name="midicc-7-12" id="2778" flags="" value="0"/>
+      <Controllable name="midicc-7-13" id="2779" flags="" value="0"/>
+      <Controllable name="midicc-7-14" id="2780" flags="" value="0"/>
+      <Controllable name="midicc-7-15" id="5986" flags="" value="0"/>
+      <Controllable name="midicc-8-1" id="2781" flags="" value="0"/>
+      <Controllable name="midicc-8-2" id="2782" flags="" value="0"/>
+      <Controllable name="midicc-8-3" id="2783" flags="" value="0"/>
+      <Controllable name="midicc-8-4" id="2784" flags="" value="0"/>
+      <Controllable name="midicc-8-5" id="2785" flags="" value="0"/>
+      <Controllable name="midicc-8-6" id="2786" flags="" value="0"/>
+      <Controllable name="midicc-8-7" id="2787" flags="" value="0"/>
+      <Controllable name="midicc-8-8" id="2788" flags="" value="0"/>
+      <Controllable name="midicc-8-9" id="2789" flags="" value="0"/>
+      <Controllable name="midicc-8-10" id="2790" flags="" value="0"/>
+      <Controllable name="midicc-8-11" id="2791" flags="" value="0"/>
+      <Controllable name="midicc-8-12" id="2792" flags="" value="0"/>
+      <Controllable name="midicc-8-13" id="2793" flags="" value="0"/>
+      <Controllable name="midicc-8-14" id="2794" flags="" value="0"/>
+      <Controllable name="midicc-8-15" id="5987" flags="" value="0"/>
+      <Controllable name="midicc-9-1" id="2795" flags="" value="0"/>
+      <Controllable name="midicc-9-2" id="2796" flags="" value="0"/>
+      <Controllable name="midicc-9-3" id="2797" flags="" value="0"/>
+      <Controllable name="midicc-9-4" id="2798" flags="" value="0"/>
+      <Controllable name="midicc-9-5" id="2799" flags="" value="0"/>
+      <Controllable name="midicc-9-6" id="2800" flags="" value="0"/>
+      <Controllable name="midicc-9-7" id="2801" flags="" value="0"/>
+      <Controllable name="midicc-9-8" id="2802" flags="" value="0"/>
+      <Controllable name="midicc-9-9" id="2803" flags="" value="0"/>
+      <Controllable name="midicc-9-10" id="2804" flags="" value="0"/>
+      <Controllable name="midicc-9-11" id="2805" flags="" value="0"/>
+      <Controllable name="midicc-9-12" id="2806" flags="" value="0"/>
+      <Controllable name="midicc-9-13" id="2807" flags="" value="0"/>
+      <Controllable name="midicc-9-14" id="2808" flags="" value="0"/>
+      <Controllable name="midicc-9-15" id="5988" flags="" value="0"/>
+      <Controllable name="midicc-10-1" id="2809" flags="" value="0"/>
+      <Controllable name="midicc-10-2" id="2810" flags="" value="0"/>
+      <Controllable name="midicc-10-3" id="2811" flags="" value="0"/>
+      <Controllable name="midicc-10-4" id="2812" flags="" value="0"/>
+      <Controllable name="midicc-10-5" id="2813" flags="" value="0"/>
+      <Controllable name="midicc-10-6" id="2814" flags="" value="0"/>
+      <Controllable name="midicc-10-7" id="2815" flags="" value="0"/>
+      <Controllable name="midicc-10-8" id="2816" flags="" value="0"/>
+      <Controllable name="midicc-10-9" id="2817" flags="" value="0"/>
+      <Controllable name="midicc-10-10" id="2818" flags="" value="0"/>
+      <Controllable name="midicc-10-11" id="2819" flags="" value="0"/>
+      <Controllable name="midicc-10-12" id="2820" flags="" value="0"/>
+      <Controllable name="midicc-10-13" id="2821" flags="" value="0"/>
+      <Controllable name="midicc-10-14" id="2822" flags="" value="0"/>
+      <Controllable name="midicc-10-15" id="5989" flags="" value="0"/>
+      <Controllable name="midicc-11-1" id="2823" flags="" value="0"/>
+      <Controllable name="midicc-11-2" id="2824" flags="" value="0"/>
+      <Controllable name="midicc-11-3" id="2825" flags="" value="0"/>
+      <Controllable name="midicc-11-4" id="2826" flags="" value="0"/>
+      <Controllable name="midicc-11-5" id="2827" flags="" value="0"/>
+      <Controllable name="midicc-11-6" id="2828" flags="" value="0"/>
+      <Controllable name="midicc-11-7" id="2829" flags="" value="0"/>
+      <Controllable name="midicc-11-8" id="2830" flags="" value="0"/>
+      <Controllable name="midicc-11-9" id="2831" flags="" value="0"/>
+      <Controllable name="midicc-11-10" id="2832" flags="" value="0"/>
+      <Controllable name="midicc-11-11" id="2833" flags="" value="0"/>
+      <Controllable name="midicc-11-12" id="2834" flags="" value="0"/>
+      <Controllable name="midicc-11-13" id="2835" flags="" value="0"/>
+      <Controllable name="midicc-11-14" id="2836" flags="" value="0"/>
+      <Controllable name="midicc-11-15" id="5990" flags="" value="0"/>
+      <Controllable name="midicc-12-1" id="2837" flags="" value="75"/>
+      <Controllable name="midicc-12-2" id="2838" flags="" value="99"/>
+      <Controllable name="midicc-12-3" id="2839" flags="" value="4"/>
+      <Controllable name="midicc-12-4" id="2840" flags="" value="15"/>
+      <Controllable name="midicc-12-5" id="2841" flags="" value="60"/>
+      <Controllable name="midicc-12-6" id="2842" flags="" value="64"/>
+      <Controllable name="midicc-12-7" id="2843" flags="" value="21"/>
+      <Controllable name="midicc-12-8" id="2844" flags="" value="42"/>
+      <Controllable name="midicc-12-9" id="2845" flags="" value="21"/>
+      <Controllable name="midicc-12-10" id="2846" flags="" value="45"/>
+      <Controllable name="midicc-12-11" id="2847" flags="" value="68"/>
+      <Controllable name="midicc-12-12" id="2848" flags="" value="7"/>
+      <Controllable name="midicc-12-13" id="2849" flags="" value="21"/>
+      <Controllable name="midicc-12-14" id="2850" flags="" value="75"/>
+      <Controllable name="midicc-12-15" id="5991" flags="" value="77"/>
+      <Controllable name="midicc-13-1" id="2851" flags="" value="0"/>
+      <Controllable name="midicc-13-2" id="2852" flags="" value="0"/>
+      <Controllable name="midicc-13-3" id="2853" flags="" value="0"/>
+      <Controllable name="midicc-13-4" id="2854" flags="" value="0"/>
+      <Controllable name="midicc-13-5" id="2855" flags="" value="0"/>
+      <Controllable name="midicc-13-6" id="2856" flags="" value="0"/>
+      <Controllable name="midicc-13-7" id="2857" flags="" value="0"/>
+      <Controllable name="midicc-13-8" id="2858" flags="" value="0"/>
+      <Controllable name="midicc-13-9" id="2859" flags="" value="0"/>
+      <Controllable name="midicc-13-10" id="2860" flags="" value="0"/>
+      <Controllable name="midicc-13-11" id="2861" flags="" value="0"/>
+      <Controllable name="midicc-13-12" id="2862" flags="" value="0"/>
+      <Controllable name="midicc-13-13" id="2863" flags="" value="0"/>
+      <Controllable name="midicc-13-14" id="2864" flags="" value="0"/>
+      <Controllable name="midicc-13-15" id="5992" flags="" value="0"/>
+      <Controllable name="midicc-14-1" id="2865" flags="" value="0"/>
+      <Controllable name="midicc-14-2" id="2866" flags="" value="0"/>
+      <Controllable name="midicc-14-3" id="2867" flags="" value="0"/>
+      <Controllable name="midicc-14-4" id="2868" flags="" value="0"/>
+      <Controllable name="midicc-14-5" id="2869" flags="" value="0"/>
+      <Controllable name="midicc-14-6" id="2870" flags="" value="0"/>
+      <Controllable name="midicc-14-7" id="2871" flags="" value="0"/>
+      <Controllable name="midicc-14-8" id="2872" flags="" value="0"/>
+      <Controllable name="midicc-14-9" id="2873" flags="" value="0"/>
+      <Controllable name="midicc-14-10" id="2874" flags="" value="0"/>
+      <Controllable name="midicc-14-11" id="2875" flags="" value="0"/>
+      <Controllable name="midicc-14-12" id="2876" flags="" value="0"/>
+      <Controllable name="midicc-14-13" id="2877" flags="" value="0"/>
+      <Controllable name="midicc-14-14" id="2878" flags="" value="0"/>
+      <Controllable name="midicc-14-15" id="5993" flags="" value="0"/>
+      <Controllable name="midicc-15-1" id="2879" flags="" value="0"/>
+      <Controllable name="midicc-15-2" id="2880" flags="" value="0"/>
+      <Controllable name="midicc-15-3" id="2881" flags="" value="0"/>
+      <Controllable name="midicc-15-4" id="2882" flags="" value="0"/>
+      <Controllable name="midicc-15-5" id="2883" flags="" value="0"/>
+      <Controllable name="midicc-15-6" id="2884" flags="" value="0"/>
+      <Controllable name="midicc-15-7" id="2885" flags="" value="0"/>
+      <Controllable name="midicc-15-8" id="2886" flags="" value="0"/>
+      <Controllable name="midicc-15-9" id="2887" flags="" value="0"/>
+      <Controllable name="midicc-15-10" id="2888" flags="" value="0"/>
+      <Controllable name="midicc-15-11" id="2889" flags="" value="0"/>
+      <Controllable name="midicc-15-12" id="2890" flags="" value="0"/>
+      <Controllable name="midicc-15-13" id="2891" flags="" value="0"/>
+      <Controllable name="midicc-15-14" id="2892" flags="" value="0"/>
+      <Controllable name="midicc-15-15" id="5994" flags="" value="0"/>
+      <Controllable name="midi-pgm-change-0" id="5998" flags="" value="0"/>
+    </Route>
+    <Route version="7002" id="4279" name="Aux" default-type="audio" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" audio-playlist="4341" saved-meter-point="MeterPostFader" alignment-choice="Automatic" mode="Normal">
+      <ProgramVersion created-with="Ardour 7.5.0~ds-2" modified-with="Ardour 7.5.0~ds-2"/>
+      <PresentationInfo order="3" flags="AudioTrack,OrderSet,TriggerTrack" color="3568986879"/>
+      <Controllable name="solo" id="4304" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="4310" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="4312" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Aux" id="4324" direction="Input" default-type="audio">
+        <Port name="Aux/audio_in 1" type="audio" direction="Input">
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:capture_3"/>
+        </Port>
+        <Port name="Aux/audio_in 2" type="audio" direction="Input">
+          <ExtConnection for="ALSA;;Microtubes Infinity"/>
+          <ExtConnection for="ALSA;;Microtubes Infinity" other="system:capture_4"/>
+        </Port>
+      </IO>
+      <IO name="Aux" id="4325" direction="Output" default-type="audio">
+        <Port name="Aux/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="Aux/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main" muted="0"/>
+      <Controllable name="mute" id="4306" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="4308" flags="Toggle" value="0" phase-invert="00"/>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="4315" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="4319" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="4317" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="4321" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="4323" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="4314" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="4316" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="4318" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="4320" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="4322" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="4334" name="recorder:Aux" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="4333" name="player:Aux" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="4282" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="audio" order="2">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="a0"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="a0"/>
+        </Triggers>
+      </Processor>
+      <Processor id="4327" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="4329" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Controllable name="trimcontrol" id="4302" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="4326" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Controllable name="gaincontrol" id="4300" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="4330" name="meter-Audio 1" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="4331" name="Aux" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Aux" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="4340" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="4338" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="4336" flags="Toggle,RealTime" value="0"/>
+    </Route>
+  </Routes>
+  <Playlists>
+    <Playlist id="2277" name="Main In 1" type="audio" orig-track-id="2215" pgroup-id="2024-01-17 21.47.32" shared-with-ids="" frozen="0"/>
+    <Playlist id="2352" name="Main In 2" type="audio" orig-track-id="2290" pgroup-id="2024-01-17 21.47.32" shared-with-ids="" frozen="0"/>
+    <Playlist id="2593" name="Microtubes Infinity MIDI 1 (In)" type="midi" orig-track-id="2515" pgroup-id="" shared-with-ids="" frozen="0"/>
+    <Playlist id="4341" name="Aux" type="audio" orig-track-id="4279" pgroup-id="2024-01-17 22.02.42" shared-with-ids="" frozen="0"/>
+  </Playlists>
+  <UnusedPlaylists/>
+  <RouteGroups/>
+  <Click>
+    <IO name="Click" id="66" direction="Output" default-type="audio">
+      <Port name="Click/audio_out 1" type="audio" direction="Output">
+        <ExtConnection for="ALSA;;HDA Intel PCH"/>
+        <ExtConnection for="ALSA;;HDA Intel PCH" other="system:playback_1"/>
+      </Port>
+      <Port name="Click/audio_out 2" type="audio" direction="Output">
+        <ExtConnection for="ALSA;;HDA Intel PCH"/>
+        <ExtConnection for="ALSA;;HDA Intel PCH" other="system:playback_2"/>
+      </Port>
+    </IO>
+    <Processor id="67" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+      <Controllable name="gaincontrol" id="65" flags="GainLike" value="1"/>
+    </Processor>
+  </Click>
+  <Speakers>
+    <Speaker azimuth="240" elevation="0" distance="1"/>
+    <Speaker azimuth="120" elevation="0" distance="1"/>
+  </Speakers>
+  <TempoMap superclocks-per-second="282240000">
+    <Tempos>
+      <Tempo npm="120" enpm="120" note-type="4" type="Tempo::Constant" active="1" locked-to-meter="0" continuing="0" sclock="0" quarters="0:0" bbt="1|1|0" omega_beats="0"/>
+    </Tempos>
+    <Meters>
+      <Meter note-value="4" divisions-per-bar="4" sclock="0" quarters="0:0" bbt="1|1|0"/>
+    </Meters>
+    <MusicTimes/>
+  </TempoMap>
+  <ControlProtocols>
+    <Protocol name="Ableton Push 2" active="0" session-state="0"/>
+    <Protocol name="ContourDesign" active="0" session-state="0"/>
+    <Protocol name="Generic MIDI" active="0" session-state="0"/>
+    <Protocol name="Mackie" active="0" session-state="0"/>
+    <Protocol name="Novation Launch Control XL" active="0" session-state="0"/>
+    <Protocol name="Open Sound Control (OSC)" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort16" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort2" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort8" active="0" session-state="0"/>
+    <Protocol name="Softube Console1" active="0" session-state="0"/>
+    <Protocol name="Steinberg CC121" active="0" session-state="0"/>
+    <Protocol name="Tascam US-2400" active="0" session-state="0"/>
+    <Protocol name="WebSockets Server (Experimental)" active="0" session-state="0"/>
+    <Protocol name="Wiimote" active="0" session-state="0"/>
+  </ControlProtocols>
+  <Extra>
+    <AddRouteDialog LastRouteType="AudioTrack"/>
+    <UI>
+      <Window name="key-editor" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="session-options-editor" visible="0" x-off="0" y-off="280" x-size="994" y-size="483"/>
+      <Window name="speaker-config" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="about" visible="0" x-off="0" y-off="0" x-size="424" y-size="593"/>
+      <Window name="add-routes" visible="0" x-off="-1" y-off="-1" x-size="726" y-size="524"/>
+      <Window name="add-video" visible="0" x-off="0" y-off="159" x-size="800" y-size="478"/>
+      <Window name="inspector" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-midi-setup" visible="0" x-off="594" y-off="1411" x-size="727" y-size="417"/>
+      <Window name="video-export" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="script-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="bundle-manager" visible="0" x-off="248" y-off="336" x-size="480" y-size="240"/>
+      <Window name="locations" visible="0" x-off="676" y-off="211" x-size="1060" y-size="500"/>
+      <Window name="big-clock" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-transport" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="virtual-keyboard" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="library-downloader" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-connection-manager" visible="0" x-off="169" y-off="69" x-size="530" y-size="401"/>
+      <Window name="midi-connection-manager" visible="0" x-off="246" y-off="114" x-size="645" y-size="704"/>
+      <Window name="luawindow" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="idle-o-meter" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="io-plugins" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="plugin-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="plugin-dsp-load" visible="0" x-off="500" y-off="615" x-size="193" y-size="70"/>
+      <Window name="dsp-statistics" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="transport-masters" visible="0" x-off="98" y-off="446" x-size="1196" y-size="286"/>
+      <Window name="RPM-71" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-170" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-170-173" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="P-170-272" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1" custom-ui="1"/>
+      <Window name="PM-170-272" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <GUIObjectState>
+        <Object id="rtav 71" height="74"/>
+        <Object id="automation 75" height="74" visible="0"/>
+        <Object id="automation 77" height="74" visible="0"/>
+        <Object id="automation 71 12/0/0" height="74" visible="0"/>
+        <Object id="automation 90" height="74" visible="0"/>
+        <Object id="strip 71">
+          <Object id="processor 101">
+            <Object id="control 75" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="rtav 170" height="227" note-range-min="58" note-range-max="73" midnam-custom-device-mode="Default" color-mode="MeterColors" midnam-model-name="Microtubes Infinity"/>
+        <Object id="automation 207" height="35" visible="1"/>
+        <Object id="automation 170 12/0/0" height="35" visible="1"/>
+        <Object id="strip 170">
+          <Object id="processor 233">
+            <Object id="control 207" visible="0"/>
+          </Object>
+          <Object id="processor 272"/>
+        </Object>
+        <Object id="automation 222" height="35" visible="1"/>
+        <Object id="automation 170 13/1/0" height="74" visible="1"/>
+        <Object id="automation 170 13/2/0" height="74" visible="1"/>
+        <Object id="automation 170 13/3/0" height="74" visible="1"/>
+        <Object id="automation 170 13/4/0" height="74" visible="1"/>
+        <Object id="automation 170 13/5/0" height="74" visible="1"/>
+        <Object id="automation 170 13/6/0" height="74" visible="1"/>
+        <Object id="automation 170 13/7/0" height="74" visible="1"/>
+        <Object id="automation 170 13/8/0" height="74" visible="1"/>
+        <Object id="automation 170 13/9/0" height="74" visible="1"/>
+        <Object id="automation 170 13/10/0" height="74" visible="1"/>
+        <Object id="automation 170 13/11/0" height="74" visible="1"/>
+        <Object id="automation 170 13/12/0" height="74" visible="1"/>
+        <Object id="automation 170 13/13/0" height="74" visible="1"/>
+        <Object id="automation 170 13/14/0" height="74" visible="1"/>
+        <Object id="automation 170 15/0/0" height="74" visible="0"/>
+      </GUIObjectState>
+    </UI>
+    <Videomonitor active="0"/>
+  </Extra>
+  <Script lua="Lua 5.3">c2NyaXB0cyA9IHt9IA==</Script>
+  <IOPlugins/>
+  <description>Darkglass Microtubes Infinity
+Session d’enregistrement &amp; lecture
+
+Entrées audio : 
+- Processed signal
+- Clean signal
+- Aux (stéréo)
+
+Sorties audio :
+- Aux/Headphones
+- Balanced L/R
+- XLR Balanced
+
+
+Entrées / sorties MIDI
+
+Patches :
+- Presets A-B-C-D-E-F
+- Modes Bypass / Tuner / Lock
+- Save presets A-B-C-D-E-F
+
+Contrôles :
+- Compression
+- Drive
+- Tone/Era
+- Blend
+- Level
+- Compression mode
+- Distortion mode
+- Cabsim select
+
+Equalizer 6 bands</description>
+</Session>
